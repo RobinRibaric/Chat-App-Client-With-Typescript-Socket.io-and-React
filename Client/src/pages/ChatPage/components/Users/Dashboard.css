@@ -1,0 +1,17 @@
+.dashboard {
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    background-color: #19171C;
+}
+
+.dashboard_header {
+    padding: 5px 10px;
+    color: white;
+}
+
+.users-list {
+    color: white;
+}
