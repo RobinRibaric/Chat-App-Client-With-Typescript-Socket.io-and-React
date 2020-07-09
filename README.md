@@ -5,9 +5,9 @@ Description:
 
 How to use:
   1. Clone or download repository.
-  2. Cd into Client folder and run npm install.
-  3. Run npm start to start app.
-  4. Run the server. Link to server and instructions: (https://github.com/RobinRibaric/Chat-App-Server-with-Express-Socket.io-and-Typescript)
+  2. Cd into Client folder and run npm install. 
+  3.. Run the server. Link to server and instructions: (https://github.com/RobinRibaric/Chat-App-Server-with-Express-Socket.io-and-Typescript)
+  4. Run npm start to start app.
   5. Go to localhost:3000.
   6. Happy chatting!
 
