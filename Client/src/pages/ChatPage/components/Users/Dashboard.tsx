@@ -14,7 +14,7 @@ const Dashboard: React.FC = () => {
             <h2 className="dashboard_header">People Online</h2>
             <div className="users-list">
                 <ul>
-                    {usersList ? usersList.map( user => <li key={user.id}>{user.name}</li>) : null}
+                    {usersList ? usersList.map( user => <li className="usernameListItem" key={user.id}>{user.name}</li>) : null}
                 </ul>
             </div>
         </div>

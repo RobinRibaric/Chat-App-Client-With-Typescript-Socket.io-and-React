@@ -1,6 +1,6 @@
 .form {
     display: flex;
-    border-top: 2px solid #D3D3D3;
+    border-top: 1px solid #D3D3D3;
     height: 11%;
   }
   
@@ -21,13 +21,15 @@
     color: #fff !important;
     text-transform: uppercase;
     text-decoration: none;
-    background: #0080ff;
+    background: #1B4965;
     padding: 5px;
     display: inline-block;
     border: none;
     width: 20%;
+    border-radius: 5px;
   }
 
   .sendButton:hover {
     cursor: pointer;
+    background-color: #1e577a;
   }

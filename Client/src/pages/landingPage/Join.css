@@ -30,11 +30,11 @@
     border-bottom: 2px solid white;
   }
   
-  .button {
+  .loginButton {
       color: #fff !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #0080ff;
+      background: #1B4965;
       padding: 20px;
       border-radius: 5px;
       display: inline-block;
@@ -43,7 +43,8 @@
   }
 
   .errorInfo {
-    color: red;
+    color: rgb(243, 64, 64);
+    height: 25px;
   }
   
   .mt-20 {
@@ -62,8 +63,13 @@
   
   }
   
-  .button:focus {
+  .loginButton:focus {
     outline: 0;
+  }
+
+  .loginButton:hover {
+    cursor: pointer;
+    background-color: #1e577a;;
   }
 
   .information {

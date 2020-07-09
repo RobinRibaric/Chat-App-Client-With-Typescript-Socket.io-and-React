@@ -1,5 +1,5 @@
 .dashboard {
-    border: solid 2px white;
+    border: solid 1px white;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -14,4 +14,8 @@
 
 .users-list {
     color: white;
+}
+
+.usernameListItem {
+    margin-bottom: 5px;
 }
