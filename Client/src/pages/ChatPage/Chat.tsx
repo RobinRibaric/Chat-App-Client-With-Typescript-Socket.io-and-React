@@ -86,17 +86,19 @@ const Chat: React.FC<Props> = ({ location }) => {
             setUserTyping({name: "", isTyping: false});
         });
 
-        socket.on('user disconnecting', ({ user }: {user: user}) => {
-                let list = usersList.filter( client => client.name !== user.name);
-                dispatch(setUsersAction([...list]));
-            
-        });
-
         socket.on('disconnect', ({name}: {name: string}) => {
             setDisconnect(true);
         });
         
-    }, [usersList]);
+    }, []);
+
+    useEffect(() => {
+        socket.on('user disconnecting', ({ user }: {user: user}) => {
+            let list = usersList.filter( client => client.name !== user.name);
+            dispatch(setUsersAction([...list]));
+        
+    });
+    }, [usersList])
     
     
     const sendMessage = (event: React.FormEvent<HTMLInputElement>) => {
