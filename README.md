@@ -28,7 +28,7 @@ You will also see any lint errors in the console.
 SCREENSHOTS:
 
 Landing Page:
-![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/landingPage.PNG)
+![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/homePage.PNG)
 
 Chatt:
 ![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatPage.PNG)
