@@ -31,7 +31,7 @@ Landing Page:
 ![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/landingPage.PNG)
 
 Chatt:
-![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chat%20page.PNG)
+![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatPage.PNG)
 
 
 ### `npm test`
