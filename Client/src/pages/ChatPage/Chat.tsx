@@ -131,13 +131,15 @@ const Chat: React.FC<Props> = ({ location }) => {
     }
 
     return (
-        <div className="outerContainer">
-            <Dashboard />
-            <div className="chatContainer">
-                {inactive ? <Redirect to='/' /> : null}
-                <Logout logout={logout}/>
-                <Messages messages={messages} name={name} userTyping={userTyping}/>
-                <TextInput message={message} typing={typing} sendMessage={sendMessage} />
+        <div className="chat-outerContainer">
+            <div className="chat-innerContainer">
+                <Dashboard />
+                <div className="chatBoxContainer">
+                    {inactive ? <Redirect to='/' /> : null}
+                    <Logout logout={logout}/>
+                    <Messages messages={messages} name={name} userTyping={userTyping}/>
+                    <TextInput message={message} typing={typing} sendMessage={sendMessage} />
+                </div>
             </div>
         </div>
 
