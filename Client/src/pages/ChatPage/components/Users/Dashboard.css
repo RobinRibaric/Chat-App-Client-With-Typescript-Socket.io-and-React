@@ -7,12 +7,13 @@
     background-color: #19171C;
 }
 
-.dashboard_header {
+.dashboardHeader {
     padding: 5px 10px;
     color: white;
+    text-decoration: underline;
 }
 
-.users-list {
+.usersList {
     color: white;
 }
 
