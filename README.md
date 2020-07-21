@@ -30,8 +30,12 @@ SCREENSHOTS:
 Landing Page:
 ![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/homePage.PNG)
 
-Chatt:
-![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatPage.PNG)
+Chatt Desktop:
+![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatt.PNG)
+
+Chatt Mobile: 
+![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatt-mobile.PNG)
+![](https://github.com/RobinRibaric/Chat-App-Client-With-Typescript-Socket.io-and-React/blob/master/Client/github-Images/chatt-sidedrawer-mobile.PNG)
 
 
 ### `npm test`
