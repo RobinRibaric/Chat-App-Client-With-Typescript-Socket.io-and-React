@@ -1,9 +1,19 @@
+:root {
+  --main-bg-color: #E43F6F;
+  --chat-bg-color: white;
+  --secondary-color: #F56476;
+  --secondary-click-color: #f37382;
+  --text-color: white;
+  --border-color: white;
+}
+
 .messages {
     padding: 5% 0;
     overflow: hidden;
     flex: auto;
-    background: url("../../assets/images/spinning.jpeg");
-    background-size: 100% 100%;
+    background-color: var(--chat-bg-color);
+    /* background: url("../../assets/images/spinning.jpeg");
+    background-size: 100% 100%; */
   }
 
   .isTyping {

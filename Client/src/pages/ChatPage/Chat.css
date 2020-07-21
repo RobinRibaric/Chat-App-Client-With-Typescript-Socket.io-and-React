@@ -1,8 +1,9 @@
 :root {
-  --main-bg-color: black;
-  --secondary-color: #1B4965;
+  --main-bg-color: #E43F6F;
+  --secondary-color: #F56476;
+  --secondary-click-color: #f37382;
   --text-color: white;
-  --border-color: white;
+  --border-color: #E43F6F;
 }
 
 .chat-outerContainer {
