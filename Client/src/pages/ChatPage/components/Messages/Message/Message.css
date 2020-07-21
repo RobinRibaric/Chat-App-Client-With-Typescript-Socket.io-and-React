@@ -53,12 +53,12 @@
     justify-content: flex-end;
   }
   
-  .color-black {
-    color: black;
+  .color-light {
+    color: white;
   }
   
-  .color-white {
-    color: white;
+  .color-dark {
+    color: black;
   }
   
   .background-Blue {
