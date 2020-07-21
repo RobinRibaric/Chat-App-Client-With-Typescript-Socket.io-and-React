@@ -1,4 +1,4 @@
-.messageBox {
+.message-Box {
     background: #F3F3F3;
     border-radius: 20px;
     padding: 2px 20px;
@@ -8,7 +8,7 @@
     margin-bottom: 5px;
   }
   
-  .messageText {
+  .message-Text {
     width: 100%;
     letter-spacing: 0;
     float: left;
@@ -16,18 +16,18 @@
     word-wrap: break-word;
   }
   
-  .messageText img {
+  .message-Text img {
     vertical-align: middle;
   }
   
-  .messageContainer {
+  .message-Container {
     display: flex;
     justify-content: flex-end;
     padding: 0 5%;
     margin-top: 3px;
   }
   
-  .sentText {
+  .sent-Text {
     display: flex;
     align-items: center;
     font-family: Helvetica;
@@ -44,26 +44,26 @@
     padding-right: 10px;
   }
   
-  .justifyStart {
+  .justify-Start {
     justify-content: flex-start;
   }
   
-  .justifyEnd {
+  .justify-End {
     justify-content: flex-end;
   }
   
-  .colorWhite {
+  .color-White {
     color: white;
   }
   
-  .colorDark {
+  .color-Dark {
     color: #353535;
   }
   
-  .backgroundBlue {
+  .background-Blue {
     background: #0080ff;
   }
   
-  .backgroundLight {
+  .background-Light {
     background: #F3F3F3;
   }

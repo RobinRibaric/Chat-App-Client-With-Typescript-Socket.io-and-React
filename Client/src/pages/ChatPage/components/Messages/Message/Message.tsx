@@ -28,19 +28,19 @@ const Message: React.FC<Props> = ({ message: { text, user }, name }) => {
     return (
         isSentByCurrentUser
             ? (
-                <div className="messageContainer justifyEnd">
-                    <p className="sentText pr-10">{trimmedName}</p>
-                    <div className="messageBox backgroundBlue">
-                        <p className="messageText colorWhite">{ReactEmoji.emojify(text)}</p>
+                <div className="message-Container justify-End">
+                    <p className="sent-Text pr-10">{trimmedName}</p>
+                    <div className="message-Box background-Blue">
+                        <p className="message-Text color-White">{ReactEmoji.emojify(text)}</p>
                     </div>
                 </div>
             )
             : (
-                <div className="messageContainer justifyStart">
-                    <div className="messageBox backgroundLight">
-                        <p className="messageText colorDark">{ReactEmoji.emojify(text)}</p>
+                <div className="message-Container justify-Start">
+                    <div className="message-Box background-Light">
+                        <p className="message-Text color-Dark">{ReactEmoji.emojify(text)}</p>
                     </div>
-                    <p className="sentText">{user}</p>
+                    <p className="sent-Text">{user}</p>
                 </div>
             )
     );

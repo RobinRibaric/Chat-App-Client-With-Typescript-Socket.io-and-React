@@ -10,9 +10,14 @@ import { RootState } from '../../store';
 
 import Messages from './components/Messages/Messages';
 import TextInput from './components/TextInput/TextInput';
-import Logout from './components/Logout/Logout';
+import Toolbar from './components/Toolbar/Toolbar';
 import Dashboard from './components/Users/Dashboard';
 
+//For Mobile
+import Backdrop from './Mobile/components/Backdrop/Backdrop';
+import SideDrawer from './Mobile/components/SideDrawer/SideDrawer';
+
+//Css
 import './Chat.css';
 
 import { user, messageInterface, userTyping } from '../@interfaces/interfaces';
@@ -33,6 +38,7 @@ const Chat: React.FC<Props> = ({ location }) => {
     const [timer, setTimer] = useState<ReturnType<typeof setTimeout>>(setTimeout(() => {}, 10000));
     const [inactive, setDisconnect] = useState(false);
     const usersList = useSelector((state: RootState) => state.UsersReducer.users);
+    const [SideDrawerOpen, setSideDrawerOpen] = useState<boolean>(false);
 
     const dispatch = useDispatch();
     const ENDPOINT = 'localhost:5000';
@@ -130,13 +136,28 @@ const Chat: React.FC<Props> = ({ location }) => {
         
     }
 
+    const drawerToogleClickHandler = () => {
+        setSideDrawerOpen(!SideDrawerOpen);
+    }
+
+   
+    let backdrop;
+
+    if(SideDrawerOpen) {
+        backdrop = <Backdrop toogleSideDrawer={drawerToogleClickHandler}/>
+    }
+
     return (
+
+
         <div className="chat-outerContainer">
             <div className="chat-innerContainer">
-                <Dashboard />
+                 <Dashboard/>
+                 <SideDrawer logout={logout} sideDrawerOpen={SideDrawerOpen}/>
+                 {backdrop}
                 <div className="chatBoxContainer">
                     {inactive ? <Redirect to='/' /> : null}
-                    <Logout logout={logout}/>
+                    <Toolbar toogleSideDrawer={drawerToogleClickHandler} logout={logout}/>
                     <Messages messages={messages} name={name} userTyping={userTyping}/>
                     <TextInput message={message} typing={typing} sendMessage={sendMessage} />
                 </div>

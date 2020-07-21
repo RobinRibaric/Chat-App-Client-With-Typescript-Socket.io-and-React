@@ -17,7 +17,7 @@
     outline: none;
   }
   
-  .sendButton {
+  .send-Button {
     color: #fff !important;
     text-transform: uppercase;
     text-decoration: none;
@@ -29,7 +29,7 @@
     border-radius: 5px;
   }
 
-  .sendButton:hover {
+  .send-Button:hover {
     cursor: pointer;
     background-color: #1e577a;
   }

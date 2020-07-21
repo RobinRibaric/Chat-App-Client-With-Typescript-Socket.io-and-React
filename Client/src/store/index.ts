@@ -3,11 +3,13 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 import ErrorReducer from './Reducers/ErrorReducer';
 import UsersReducer from './Reducers/UsersReducer';
+import DisplayDrawerReducer from './Reducers/DisplayDraweReducer';
 
 
 const rootReducer = combineReducers({
     ErrorReducer,
-    UsersReducer
+    UsersReducer,
+    DisplayDrawerReducer,
   });
 
   export const store = createStore(rootReducer, composeWithDevTools());

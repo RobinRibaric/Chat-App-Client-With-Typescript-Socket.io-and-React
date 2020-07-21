@@ -1,20 +1,24 @@
 import React from 'react';
-
 import { useSelector } from 'react-redux';
 import { RootState } from '../../../../store';
+
 
 import './Dashboard.css';
 
 
+
 const Dashboard: React.FC = () => {
     const usersList = useSelector((state: RootState) => state.UsersReducer.users);
+    
 
+    
+    
     return(
         <div className="dashboard">
-            <h2 className="dashboardHeader">People Online</h2>
-            <div className="usersList">
+            <h2 className="dashboard-Header">People Online</h2>
+            <div className="users-List">
                 <ul>
-                    {usersList ? usersList.map( user => <li className="usernameListItem" key={user.id}>{user.name}</li>) : null}
+                    {usersList ? usersList.map( user => <li className="username-List-Item" key={user.id}>{user.name}</li>) : null}
                 </ul>
             </div>
         </div>

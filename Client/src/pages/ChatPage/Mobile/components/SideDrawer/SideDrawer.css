@@ -1,0 +1,61 @@
+.sidedrawer {
+    border: solid 1px white;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 60%;
+    max-width: 300px;
+    flex-direction: column;
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+    height: 100%;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-out;
+}
+
+.sidedrawer-header {
+    padding: 5px 10px;
+    color: white;
+    text-decoration: underline;
+}
+
+.usersList {
+    color: white;
+    height: 100%;
+}
+
+.usernameListItem {
+    margin-bottom: 5px;
+}
+
+.sidedrawer.open {
+    transform: translateX(0);
+}
+
+.sidedrawer-logoutBtn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #1B4965;
+    padding: 1px 15px;
+    border-radius: 1px;
+    display: inline-block;
+    border: none;
+    height: 20%;
+    border: none;
+    
+}
+
+.sidedrawer-logoutBtn:active{
+    cursor: pointer;
+    background-color: #1e577a;
+  }
+
+@media (min-width: 768px){
+    .sidedrawer {
+        display: none;
+    }
+}

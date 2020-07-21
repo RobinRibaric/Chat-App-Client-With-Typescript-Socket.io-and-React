@@ -1,22 +1,35 @@
+:root {
+    --main-bg-color: black;
+    --secondary-color: #1B4965;
+    --text-color: white;
+    --border-color: white;
+  }
+
 .dashboard {
-    border: solid 1px white;
+    border: solid 1px var(--border-color);
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 25%;
-    background-color: #19171C;
+    
 }
 
-.dashboardHeader {
+.dashboard-Header {
     padding: 5px 10px;
-    color: white;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
-.usersList {
-    color: white;
+.users-List {
+    color: var(--text-color);
 }
 
-.usernameListItem {
+.username-List-Item {
     margin-bottom: 5px;
+}
+
+@media (max-width: 768px){
+    .dashboard {
+        display: none;
+    }
 }

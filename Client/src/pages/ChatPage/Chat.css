@@ -1,16 +1,23 @@
+:root {
+  --main-bg-color: black;
+  --secondary-color: #1B4965;
+  --text-color: white;
+  --border-color: white;
+}
+
 .chat-outerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     justify-content: center;
-    background-color: #19171C;
+    background-color: var(--main-bg-color);
   }
 
   .chat-innerContainer {
     display: flex;
     height: 100%;
-    width: 80%;
+    width: 100%;
   }
 
   .chatBoxcontainer::-webkit-scrollbar {
@@ -28,8 +35,18 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    width: 70%;
-    border: solid 2px white;
+    width: 100%;
+    border: solid 2px var(--border-color);
+  }
+
+  @media (max-width: 768px){
+    .chat-outerContainer {
+      width: 100%;
+    }
+
+    .chat-innerContainer {
+      width: 100%;
+    }
   }
   
   @media (min-width: 320px) and (max-width: 480px) {
@@ -48,3 +65,5 @@
       width: 60%;
     }
   }
+
+  

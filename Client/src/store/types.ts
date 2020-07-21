@@ -26,7 +26,16 @@ export interface errorState {
     payload: user[];
   }
 
+  //display drawer 
+ 
+  export const SET_DISPLAYDRAWER = 'SET_DISPLAYDRAWER';
+  export interface setDisplayDrawerAction {
+    type: typeof SET_DISPLAYDRAWER;
+    payload: boolean;
+  }
+
 //types
   export type ActionTypes  = 
   | setErrorAction
   | setUserListAction
+  | setDisplayDrawerAction

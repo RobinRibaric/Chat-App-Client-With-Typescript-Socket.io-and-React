@@ -18,7 +18,7 @@ const Input: React.FC<Props> = ({ typing, sendMessage, message }) => (
             onChange={({ target: { value } }) => typing(value)}
             onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
         />
-        <button className="sendButton" onClick={event => {
+        <button className="send-Button" onClick={event => {
             sendMessage(event)
             typing("");
             }}>Send</button>

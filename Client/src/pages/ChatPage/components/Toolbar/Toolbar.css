@@ -1,3 +1,11 @@
+:root {
+  --main-bg-color: black;
+  --secondary-color: #1B4965;
+  --secondary-click-color: #1e577a;
+  --text-color: white;
+  --border-color: white;
+}
+
 .Info{
     display: flex;
     justify-content: space-between;
@@ -5,22 +13,22 @@
     height: 60px;
     width: 100%;
     background-color: #19171C;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--border-color);
   }
   
-  .leftInnerContainer {
+  .left-Inner-Container {
     flex: 0.5;
     display: flex;
     align-items: center;
-    margin-left: 5%;
-    color: white;
+    margin-left: 2%;
+    color: var(--text-color);
   }
   
-  .rightInnerContainer {
+  .right-Inner-Container {
     display: flex;
     flex: 0.5;
     justify-content: flex-end;
-    color: white;
+    color: var(--text-color);
     width: 30%;
     min-width: 40px;
   }
@@ -30,7 +38,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    background-color: #1B4965;
+    background-color: var(--secondary-color);
     padding: 1px 15px;
     border-radius: 1px;
     display: inline-block;
@@ -40,7 +48,17 @@
     
 }
 
+.chatbox-header {
+  margin-left: 5px;
+}
+
 .logout-btn:hover{
   cursor: pointer;
-  background-color: #1e577a;
+  background-color: var(--secondary-click-color);
+}
+
+@media (max-width: 768px) {
+  .logout-btn {
+    display: none;
+  }
 }

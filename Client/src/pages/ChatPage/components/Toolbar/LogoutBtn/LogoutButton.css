@@ -1,0 +1,34 @@
+:root {
+    --main-bg-color: black;
+    --secondary-color: #1B4965;
+    --secondary-click-color: #1e577a;
+    --text-color: white;
+    --border-color: white;
+  }
+
+.logout-btn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: var(--secondary-color);
+    padding: 1px 15px;
+    border-radius: 1px;
+    display: inline-block;
+    border: none;
+    height: 100%;
+    border: none;
+    
+}
+
+
+.logout-btn:hover{
+    cursor: pointer;
+    background-color: var(--secondary-click-color);
+  }
+
+  @media (max-width: 768px) {
+      .logout-btn {
+          height: 10px;
+      }
+  }
