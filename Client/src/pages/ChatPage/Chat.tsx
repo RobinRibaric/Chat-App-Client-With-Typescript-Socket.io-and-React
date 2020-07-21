@@ -155,7 +155,7 @@ const Chat: React.FC<Props> = ({ location }) => {
                  <Dashboard/>
                  <SideDrawer logout={logout} sideDrawerOpen={SideDrawerOpen}/>
                  {backdrop}
-                <div className="chatBoxContainer">
+                <div className="chatBox-Container">
                     {inactive ? <Redirect to='/' /> : null}
                     <Toolbar toogleSideDrawer={drawerToogleClickHandler} logout={logout}/>
                     <Messages messages={messages} name={name} userTyping={userTyping}/>

@@ -1,9 +1,13 @@
 :root {
-  --main-bg-color: #E43F6F;
-  --secondary-color: #F56476;
-  --secondary-click-color: #f37382;
+  --main-bg-color: black;
+  --dashboard-bg-color: black;
+  --chatbox-bg-color: white;
+  --secondary-color: #1B4965;
+  --secondary-click-color: #1e577a;
   --text-color: white;
-  --border-color: #E43F6F;
+  --border-color: #CCCCCC;
+  --left-bubble: #548ac4;
+  --right-bubble: #d1cbcb;
 }
 
 .chat-outerContainer {
@@ -11,6 +15,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     justify-content: center;
     background-color: var(--main-bg-color);
   }
@@ -26,12 +31,12 @@
   }
   
   
-  .chatBoxContainer {
+  .chatBox-Container {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
   }
   
-  .chatBoxContainer {
+  .chatBox-Container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,7 +68,7 @@
   
   @media (min-width: 480px) and (max-width: 1200px) {
     .chatBoxContainer {
-      width: 60%;
+      width: 100%;
     }
   }
 

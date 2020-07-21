@@ -39,7 +39,7 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    background-color: #1B4965;
+    background-color: var(--secondary-color);
     padding: 1px 15px;
     border-radius: 1px;
     display: inline-block;
@@ -51,7 +51,7 @@
 
 .sidedrawer-logoutBtn:active{
     cursor: pointer;
-    background-color: #1e577a;
+    background-color: var(--secondary-click-color);
   }
 
 @media (min-width: 768px){

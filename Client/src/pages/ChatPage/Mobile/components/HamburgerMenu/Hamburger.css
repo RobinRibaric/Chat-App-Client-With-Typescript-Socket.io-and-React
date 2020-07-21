@@ -1,8 +1,8 @@
 .hamburger-line {
     width: 25px;
-    height: 1px;
+    height: 2px;
     background-color: white;
-    margin: 5px 5px 5px 0px;
+    margin: 5px 8px 5px 2px;
 }
 
 @media (min-width: 768px){

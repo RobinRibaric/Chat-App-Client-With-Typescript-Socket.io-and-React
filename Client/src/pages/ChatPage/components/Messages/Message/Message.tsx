@@ -31,14 +31,14 @@ const Message: React.FC<Props> = ({ message: { text, user }, name }) => {
                 <div className="message-Container justify-End">
                     <p className="sent-Text pr-10">{trimmedName}</p>
                     <div className="message-Box background-Blue">
-                        <p className="message-Text color-White">{ReactEmoji.emojify(text)}</p>
+                        <p className="message-Text color-black">{ReactEmoji.emojify(text)}</p>
                     </div>
                 </div>
             )
             : (
                 <div className="message-Container justify-Start">
                     <div className="message-Box background-Light">
-                        <p className="message-Text color-Dark">{ReactEmoji.emojify(text)}</p>
+                        <p className="message-Text color-white">{ReactEmoji.emojify(text)}</p>
                     </div>
                     <p className="sent-Text">{user}</p>
                 </div>

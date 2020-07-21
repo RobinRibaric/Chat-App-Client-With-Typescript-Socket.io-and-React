@@ -1,3 +1,4 @@
+
 .message-Box {
     background: #F3F3F3;
     border-radius: 20px;
@@ -52,18 +53,18 @@
     justify-content: flex-end;
   }
   
-  .color-White {
+  .color-black {
+    color: black;
+  }
+  
+  .color-white {
     color: white;
   }
   
-  .color-Dark {
-    color: #353535;
-  }
-  
   .background-Blue {
-    background: #0080ff;
+    background: var(--right-bubble);
   }
   
   .background-Light {
-    background: #F3F3F3;
+    background: var(--left-bubble);
   }
