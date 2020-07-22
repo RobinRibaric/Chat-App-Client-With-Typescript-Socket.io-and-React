@@ -41,7 +41,7 @@ const Chat: React.FC<Props> = ({ location }) => {
     const [SideDrawerOpen, setSideDrawerOpen] = useState<boolean>(false);
 
     const dispatch = useDispatch();
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = 'https://react-chatt-aplication.herokuapp.com/';
 
     useEffect(() => {
         const { name } = queryString.parse(location.search);
