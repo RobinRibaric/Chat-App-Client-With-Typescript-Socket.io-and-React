@@ -11,11 +11,10 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-    <Router>
-      <Route path="/" exact component={Join}/>
-      <Route path="/chat" exact component={Chat}/>
-    </Router>
-
+      <Router>
+        <Route path="/" exact component={Join}/>
+        <Route path="/chat" exact component={Chat}/>
+      </Router>
     </Provider>
   );
 }
