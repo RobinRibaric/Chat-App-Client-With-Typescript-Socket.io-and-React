@@ -2,11 +2,12 @@
 .message-Box {
     background: #F3F3F3;
     border-radius: 20px;
-    padding: 2px 20px;
+    padding: 6px 20px;
     color: white;
     display: inline-block;
     max-width: 80%;
     margin-bottom: 5px;
+    
   }
   
   .message-Text {
@@ -63,9 +64,9 @@
   }
   
   .background-Blue {
-    background: var(--right-bubble);
+    background: var(--left-bubble);
   }
   
   .background-Light {
-    background: var(--left-bubble);
+    background: var(--right-bubble);
   }

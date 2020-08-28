@@ -16,8 +16,8 @@ interface Props {
 
 const Message: React.FC<Props> = ({ message: { text, user }, name }) => {
     let isSentByCurrentUser = false;
-    
-    
+
+
     const trimmedName = name.trim().toLowerCase();
     const trimmedUserName = user.trim().toLowerCase();
 
@@ -30,14 +30,14 @@ const Message: React.FC<Props> = ({ message: { text, user }, name }) => {
             ? (
                 <div className="message-Container justify-End">
                     <p className="sent-Text pr-10">{trimmedName}</p>
-                    <div className="message-Box background-Blue">
+                    <div className="message-Box background-Light">
                         <p className="message-Text color-light">{ReactEmoji.emojify(text)}</p>
                     </div>
                 </div>
             )
             : (
                 <div className="message-Container justify-Start">
-                    <div className="message-Box background-Light">
+                    <div className="message-Box background-Dark">
                         <p className="message-Text color-dark">{ReactEmoji.emojify(text)}</p>
                     </div>
                     <p className="sent-Text">{user}</p>
