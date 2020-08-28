@@ -3,7 +3,8 @@
     padding: 5% 0;
     overflow: hidden;
     flex: auto;
-    background-color: var(--chatbox-bg-color);
+    /* background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+    background-image: linear-gradient(to top, #e7627d 0%, #b8235a 33%, #801357 51%, #53234a 74%, #252238 90%);
   }
 
   .isTyping {
@@ -14,5 +15,11 @@
     border-radius: 20px;
     padding: 5px 20px;
   }
+
+  @media (max-width: 768px){
+    .messages {
+      padding-bottom: 10%;
+    }
+}
 
  

@@ -9,16 +9,16 @@ import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
     const usersList = useSelector((state: RootState) => state.UsersReducer.users);
-    
 
-    
-    
-    return(
+
+
+
+    return (
         <div className="dashboard">
             <h2 className="dashboard-Header">People Online</h2>
             <div className="users-List">
                 <ul>
-                    {usersList ? usersList.map( user => <li className="username-List-Item " key={user.id}><div className="user-name-container"><p>{user.name}</p></div></li>) : null}
+                    {usersList ? usersList.map(user => <li className="username-List-Item" key={user.id}>{user.name}</li>) : null}
                 </ul>
             </div>
         </div>
@@ -26,3 +26,5 @@ const Dashboard: React.FC = () => {
 }
 
 export default Dashboard;
+/*
+<div className="user-name-container"><p>{user.name}</p></div> */

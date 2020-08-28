@@ -32,9 +32,10 @@
     display: flex;
     align-items: center;
     font-family: Helvetica;
-    color: #828282;
+    color: #c2c1c1;
     letter-spacing: 0.3px;
     padding-left: 10px;
+    font-size: 15px;
   }
   
   .pl-10 {
@@ -54,7 +55,7 @@
   }
   
   .color-light {
-    color: white;
+    color: black;
   }
   
   .color-dark {

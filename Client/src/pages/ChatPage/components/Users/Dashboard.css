@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    list-style: none;
+    
 }
 .dashboard {
     border: solid 2px var(--border-color);
@@ -24,30 +24,30 @@
     color: var(--text-color);
     text-decoration: underline;
     text-decoration-color: var(--border-color);
-    margin-bottom: 10px;
+    margin-bottom: 8%;
 }
 
-
-
-.user-name-container {
-    border-bottom: 1px solid var(--border-color);
-    border-top: 1px solid var(--border-color);
-    width: 100%;
-    text-align: start;
-    padding-left: 5%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    filter: brightness(1.1); 
-    height: 34px;
+.username-List-Item {
+    margin-left: 50px;
+    margin-bottom: 1%;
 }
 
-.users-List p {
-    text-transform: capitalize;
-    font-size: medium;
-    font-weight: 500;
-    text-shadow: 1px 1px black;
-    text-align: start;
-    
+ul {
+    padding-left: 0px;
+    list-style-position: inside;
+    list-style-type: disc;
+    font-size: 18px;
+    line-height: 23px;
+    padding: 0 0px;
+    list-style: none;
+
+}
+
+ul li:before {
+    content: '\25CF';
+    position: absolute;
+    color: rgb(116, 43, 116);
+    left: 1em;
 }
 
 .users-List {
@@ -55,8 +55,6 @@
     height: 80%;
     overflow: scroll;
     border-bottom: 1px solid var(--border-color);
-    /* padding: 5px; */
-    
 }
 
 
